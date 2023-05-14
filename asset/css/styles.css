@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bgc-yl: #ffb900;
+    --bgc-bl: #171100;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 5000px;
+    font-size: 1.6rem;
+    font-family: "poppins", sans-serif;
+}
+
+/* Common */
+.btn {
+    display: inline-block;
+    background: var(--bgc-bl);
+    text-decoration: none;
+    min-width: 118px;
+    border-radius: 999px;
+    padding: 18px 16px;
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+/* header */
+header.fixed {
+    position: sticky;
+    top: -28px;
+}
+.header {
+    background: #fffcf4;
+    /* padding-top: 38px; */
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    max-width: calc(100% - 50px);
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+.navbar ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+.navbar ul a {
+    position: relative;
+    padding: 12px 21px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5f5b53;
+}
+
+.navbar ul li.active a,
+.navbar ul a:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: var(--bgc-bl);
+}
+
+.navbar ul li.active a::after {
+    position: absolute;
+    left: 22px;
+    bottom: 6px;
+    content: " ";
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background: var(--bgc-bl);
+    border-radius: 1px;
+}
+
+/* hero */
+main .hero {
+    background: #fffcf4;
+    padding-top: 56px;
+}
+.hero .row-hero {
+    display: flex;
+}
+
+.hero .img-hero {
+    position: relative;
+    display: flex;
+    width: 52%;
+}
+
+.hero .img-hero > img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.img-hero .courses {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 270px;
+    padding: 28px 24px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.img-hero .courses .row {
+    display: flex;
+    gap: 16px;
+}
+
+.img-hero .courses .row + .row {
+    margin-top: 22px;
+}
+
+.img-hero .row .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff9e8;
+}
+
+.img-hero .row:nth-child(2) .icon {
+    background: #fcefff;
+}
+
+.img-hero .row:last-child .icon {
+    background: #ebeaff;
+}
+
+.img-hero .row .text1 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.img-hero .row .text2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--bgc-bl);
+}
+
+.hero .info {
+    width: 48%;
+    margin: 64px 0px 0px 130px;
+}
+
+.hero .info .title {
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: var(--bgc-bl);
+}
+.hero .info .desc {
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.hero .info .row {
+    display: flex;
+    margin-top: 38px;
+    align-items: center;
+}
+
+.hero .info .btn-hero {
+    min-width: 180px;
+    padding: 23px 12px;
+    background: #ffb900;
+    border-radius: 32px;
+    font-size: 1.8rem;
+}
+.play-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 14px 0px 28px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .info .watch {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--bgc-bl);
+    text-decoration: none;
+}
+
+.info > .text {
+    font-weight: 400;
+    margin-top: 48px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.info .row-bt {
+    margin-top: 8px;
+}
+
+.hero .row-bt strong {
+    padding-right: 8px;
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 4.4rem;
+    color: var(--bgc-bl);
+}
+.hero .row-bt strong:last-child {
+    padding-left: 28px;
+}
