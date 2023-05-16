@@ -357,6 +357,79 @@ main .hero {
     margin-top: 12px;
 }
 
+.popular .item-popular .row-bt strong {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--bgc-bl);
+}
+
 .popular .btn-ppl1 {
     background-color: var(--bgc-yl);
+}
+
+/* feedback */
+.feedback {
+    margin-top: 200px;
+    height: 380px;
+    padding: 96px 135px;
+    background: #2e2100;
+}
+.feedback .row-feedback {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback .info {
+    width: 159px;
+    height: 188px;
+}
+
+.feedback .info > img {
+    object-fit: cover;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.feedback .info .name {
+    margin-top: 18px;
+    font-family: "Sen", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #f7f7f7;
+}
+.feedback .info .sub {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb3;
+}
+
+.feedback .info .dot {
+    margin-top: 28px;
+    display: flex;
+    gap: 6px;
+}
+
+.feedback .comment {
+    display: flex;
+    justify-content: space-between;
+    width: 770px;
+    height: 188px;
+}
+
+.feedback .comment .img-cmt {
+    width: 30px;
+    height: 28px;
+}
+
+.feedback .comment .desc {
+    align-items: end;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
 }
