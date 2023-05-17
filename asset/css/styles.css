@@ -5,6 +5,7 @@
 :root {
     --bgc-yl: #ffb900;
     --bgc-bl: #171100;
+    --color-para: #5f5b53;
 }
 
 html {
@@ -77,7 +78,7 @@ header.fixed {
     text-decoration: none;
     font-weight: 400;
     font-size: 1.6rem;
-    color: #5f5b53;
+    color: var(--color-para);
 }
 
 .navbar ul li.active a,
@@ -162,7 +163,7 @@ main .hero {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #5f5b53;
+    color: var(--color-para);
 }
 
 .img-hero .row .text2 {
@@ -190,7 +191,7 @@ main .hero {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #5f5b53;
+    color: var(--color-para);
 }
 
 .hero .info .row {
@@ -230,7 +231,7 @@ main .hero {
     margin-top: 48px;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #5f5b53;
+    color: var(--color-para);
 }
 
 .info .row-bt {
@@ -279,7 +280,7 @@ main .hero {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #5f5b53;
+    color: var(--color-para);
 }
 
 .popular .direction .btn-control {
@@ -347,7 +348,7 @@ main .hero {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #5f5b53;
+    color: var(--color-para);
 }
 
 .popular .item-popular .row-bt {
@@ -432,4 +433,73 @@ main .hero {
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
+}
+/* feature */
+
+.feature {
+    margin-top: 200px;
+}
+
+.feature .row-feature {
+    display: flex;
+}
+
+.feature .row-feature .img {
+    width: 50%;
+    display: flex;
+    gap: 30px;
+}
+.feature .row-feature .img img {
+    width: 270px;
+    height: 405px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.feature .row-feature:not(.row-feature2) .img img:first-child {
+    margin-top: 34px;
+}
+
+.feature .row-feature:not(.row-feature2) .info {
+    width: 50%;
+    margin: 58px 0px 58px 130px;
+}
+
+.row-feature .info .title {
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: var(--bgc-bl);
+}
+
+.row-feature .info p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+    margin-top: 16px;
+}
+
+.row-feature .info .btn-feature {
+    min-width: 137px;
+    background: #ffb900;
+    margin-top: 32px;
+}
+
+.row-feature2 {
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-between;
+}
+
+.feature .row-feature2 .info {
+    margin: 71px 130px 71px 0;
+}
+
+.feature .row-feature2 .img img {
+    width: 470px;
+    height: 440px;
+    border-radius: 20px;
 }
