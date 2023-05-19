@@ -13,9 +13,12 @@ html {
 }
 
 body {
-    height: 5000px;
     font-size: 1.6rem;
     font-family: "poppins", sans-serif;
+}
+html,
+body {
+    scroll-behavior: smooth;
 }
 .line-clamp {
     /* thêm 3.. */
